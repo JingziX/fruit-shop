@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/**
+ * 123
+ * @authors xiangjm (xiangjm@seaway.net.cn)
+ * @date    2019-03-12 17:54:29
+ * @version $Id$
+ */
+
+ @import './theme.less';
+html, body, div, ul, li, ol, table, em, span, i,input {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 20px;
+	font-size: 5vw;
+}
+
+body {
+	font-size: 0.8rem;
+}
+ul,li{
+	list-style:none;
+}
+.login {
+	&>h5{
+		color: #000;
+		font-size: 1rem;
+		margin: 2rem;
+		text-align: center;
+	}
+	&-list{
+		margin: 0 auto;
+		text-align: center;
+	}
+	&-item{
+		margin:0.5rem 1rem;
+		overflow: hidden;
+		border-bottom: @border;
+		label{
+			float: left;
+			margin-right:0.5rem;
+			width:5rem;
+			width:5rem;
+		}
+		input{
+			float: left;
+			border:0 none;
+			width:calc(100%-5.5rem);
+			width:-webkit-calc(100%-5.5rem);
+		}
+	}
+}
